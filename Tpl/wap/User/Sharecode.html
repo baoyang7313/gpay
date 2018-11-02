@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>分享好友</title>
+<link rel="stylesheet" href="__WCSS__/style.css">
+<link rel="stylesheet" href="__WCSS__/meCen.css">
+<script src="__WJS__/jquery1.11.1.min.js"></script>
+<script type="text/javascript" src="__COM__/layer/layer.js"></script>
+<script type="text/javascript" src="__COM__/js/index.js" ></script>
+
+<body class="bg96 bg_blue">
+	<div class="header">
+	    <div class="header_l" style="">
+	    <a href="{:U('Index/index')}"><img src="__WIMG__/jiant.png" alt=""></a>
+	    </div>
+	    <div class="header_c" style=""><h2>{$Think.lang.shareFri}</h2></div>
+	    <div class="header_r" style=""><a href="/Growth/test?filename=.{$urel}" >{$Think.lang.getCode}</a></div>
+	</div>
+
+
+	<div class="share-top clear">
+
+		<img src="__WIMG__/shareCode.png">
+		<span>Gpays</span>
+
+		<div class="share_rwm">
+			<div>
+				<p>{$Think.lang.share_p}</p>
+				<img src="{$urel}">
+				<p>{$Think.lang.share_p2}</p><br>
+			</div>
+
+			<div>
+				<a href="{:U('User/Sharelist')}"><p>{$Think.lang.share_jl}</p></a>
+			</div>
+		</div>
+		<div class="copBtn">
+			<span hidden id="txt">{$aurl}</span>
+			<a href="javascript:void(0)"  onclick="copyUrl();"  class="copyLink"><p>{$Think.lang.share_link}</p></a>
+		</div>
+	</div>
+
+    <script type="text/javascript">
+        function copyUrl()
+        {
+            var txt=$("#txt").text();
+            copy(txt);
+        }
+
+        function copy(message) {
+            var input = document.createElement("input");
+            input.value = message;
+            document.body.appendChild(input);
+            input.select();
+            input.setSelectionRange(0, input.value.length), document.execCommand('Copy');
+            document.body.removeChild(input);
+            alert("复制成功哦");
+        }
+    </script>
+
+</body>
+</html>

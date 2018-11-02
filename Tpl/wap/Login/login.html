@@ -1,0 +1,91 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>{$Think.lang.ucenter}{$Think.lang.login}</title>
+    <link rel="stylesheet" href="__WCSS__/style.css">
+    <link rel="stylesheet" href="__WCSS__/login.css">
+    <body>
+
+        <div class="login-container">
+
+            <div class="logo">
+                <img src="__WIMG__/logo.png">
+            </div>
+            <h1></h1>
+<!--            <span id="lant" style="float: right;margin-top: 0px;">
+                <eq name="lantype" value="1">简体中文</eq>
+                <eq name="lantype" value="2">English</eq>
+
+
+            </span>-->
+
+            <!--	<div <eq name="lantype" value="1">class="dyyyinw ona"<else />class="dyyyinw"</eq>><span>简体中文</span><p><input type="radio" name="identity" value="1"  class="radioclass"></p></div>
+                    <div <eq name="lantype" value="2">class="dyyyinw ona"<else />class="dyyyinw"</eq>><span>English</span> <p><input type="radio" name="identity" value="2" class="radioclass"/></p></div>-->
+
+            <form name="formlogin" id="loginForm" class="formlogin" method="post" action="{:U('Login/checkLogin')}">
+                <div  class="div-bor">
+                    <i class="icon-tel"></i>
+                    <input type="text" name="account" class="username" placeholder="{$Think.lang.mobile}/UID" autocomplete="off"/>
+                </div>
+                <div>
+                    <input type="password" name="password" class="password" placeholder="{$Think.lang.loginpwd}" oncontextmenu="return false" onpaste="return false" />
+                </div>
+                <div>
+                    <select id="lang" class="lang">
+                        <option style="background: none; border: 0;" value ="1" <eq name="lantype" value="1">selected="selected"</eq>>简体中文</option>
+                        <option style="background: none; border: 0;" value ="2" <eq name="lantype" value="2">selected="selected"</eq>>English</option>
+<!--                        <option value="3">Opel</option>
+                        <option value="4">Audi</option>-->
+                    </select>
+                </div>
+                <div  class="inde-reg">
+                    <button id="submit" type="button" onclick="login()">{$Think.lang.login}</button>
+                </div>
+            </form>
+            <!-- 	<a href="{:U('Login/Appload')}" class="inde-reg ">
+                            <button type="button" class="register-tis">APP下载</button>
+                    </a> -->
+            <!-- <a href="https://w-5.net/7Wr0L" class="inde-reg ">
+                    <button type="button" class="register-tis">APP下载</button>
+            </a>
+            -->
+
+            <a href="{:U('Login/register')}" class="inde-reg ">
+                <button type="button" class="register-tis" style="border:none;background: none;width: 55%;float: right;">{$Think.lang.register}</button>
+            </a>
+
+            <a href="{:U('login/getpsw')}" class="inde-reg" >
+                <button type="button" class="register-tis" style="border:none;background: none;width: 45%;float: left;">{$Think.lang.forgelogpwd}</button>
+            </a>
+            <div class="pad10"></div>
+        </div>
+
+    </body>
+    <script src="__WJS__/jquery1.11.1.min.js"></script>
+
+    <!--<script src="__WJS__/common.js"></script>-->
+
+    <!--表单验证-->
+    <script src="__WJS__/jquery.validate.min.js?var1.14.0"></script>
+
+    <!--commonjs-->
+    <script type="text/javascript" src="__COM__/layer/layer.js" ></script>
+    <script type="text/javascript" src="__COM__/js/jquery-1.9.1.min.js" ></script>
+
+    <script type="text/javascript" src="__COM__/layer/layer.js"></script>
+    <script type="text/javascript" src="__COM__/js/index.js"></script>
+    <script>
+            
+            $('#lang').change(function() {
+                var checlan = $('#lang').val();
+                console.log(checlan);
+                if (checlan == 1) {
+                    window.location.href = '?l=zh-cn';
+                }
+
+                if (checlan == 2) {
+                    window.location.href = '?l=en-us';
+                }
+            })
+        </script>
+</html>

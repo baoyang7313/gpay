@@ -1,0 +1,91 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>团队</title>
+<link rel="stylesheet" href="__WCSS__/style.css">
+<link rel="stylesheet" href="__WCSS__/meCen.css">
+<body class="bg96" style="background: #272624">
+
+<div class="header">
+    <div class="header_l">
+        <a href="{:U('Index/index')}"><img src="__WIMG__/jiant.png" alt=""></a>
+    </div>
+    <div class="header_c"><h2>{$Think.lang.team}</h2></div>
+    <div class="header_r" style=""><a href="{:U('User/Sharelist')}">{$Think.lang.sharelist}</a></div>
+</div>
+
+<!--<div class="big_width100 por">-->
+
+    <!--<form action="{:U('User/Teamdets')}" method="post">-->
+        <!--<div class="zySearch">-->
+            <!--<input id="searchInput" name="uinfo" class="search-input" value="{$uinfo}" type="text" placeholder="搜索UID/手机号码">-->
+            <!--<button class="search-btn btn">搜索</button>-->
+        <!--</div>-->
+    <!--</form>-->
+
+    <!--<foreach name="muinfo" item="v">-->
+        <!--<div class="share_ul">-->
+            <!--<div class="share_ul_l">-->
+                <!--<img src="__IMGHEAD__/{$v['img_head']}" alt="">-->
+                <!--<div class="share_p">-->
+                    <!--<p>{$v['username']}</p>-->
+                    <!--<p>UID:{$v['userid']}</p>-->
+                    <!--<p>电话:{$v['mobile']}</p>-->
+                    <!---->
+                <!--</div>-->
+            <!--</div>-->
+            <!--<div class="shijin">{$v['reg_date']|date="Y-m-d H:i:s",###}</div>-->
+
+                <!--<if condition="$v['use_grade'] == 1">-->
+                <!--<div class="dengjxias dengjxiasa">-->
+                <!--普通用户-->
+                <!--<elseif condition="$v['use_grade'] == 2"/>-->
+                <!--<div class="dengjxias dengjxiasb">-->
+                <!--黄金VIP-->
+                <!--<elseif condition="$v['use_grade'] == 3"/>-->
+                <!--<div class="dengjxias dengjxiasc">-->
+                <!--铂金VIP-->
+                <!--<elseif condition="$v['use_grade'] == 4"/>-->
+                <!--<div class="dengjxias dengjxiasd">-->
+                <!--钻石VIP-->
+                <!--<else />-->
+                <!--<div class="dengjxias">-->
+                <!--初始会员-->
+                <!--</if>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</foreach>-->
+<!--</div>-->
+<div class="tuandui">
+    <div class="t-top-img">
+        <img src="__WIMG__/team_top.png"/>
+    </div>
+
+    <div class="team_top_box">
+        <div class="team_top">
+            <div class="jf_Balance">
+                <!--<img src="__WIMG__/jiant.png">-->
+                <span style="color: #F0F0F0;font-size:15px;">{$Think.lang.sum_team}</span><br/><strong style="color: white;font-size:14px;">{$data['count']}</strong>
+            </div>
+            <div class="jf_Balance">
+                <!--<img src="__WIMG__/jiant.png">-->
+                <span style="color: #F0F0F0;font-size: 15px;">{$Think.lang.team_jf}</span> <br/><strong style="color: white;font-size:14px">{$data['jfsum']}</strong>
+                <div class="jf_line"></div>
+            </div>
+        </div>
+        <div class="team_box">
+            <div class="team-list">
+                <ul>
+                    <li><img src="__WIMG__/team_1.png"><span>{$Think.lang.cshy}<span>&nbsp;&nbsp;&nbsp;{$data['zchy']}</span></span></li>
+                    <li><img src="__WIMG__/team_2.png"><span>{$Think.lang.pt}<span>&nbsp;&nbsp;&nbsp;{$data['pthy']}</span></span></li>
+                    <li><img src="__WIMG__/team_3.png"><span>{$Think.lang.hj}<span>&nbsp;&nbsp;&nbsp;{$data['viphy']}</span></span></li>
+                    <li><img src="__WIMG__/team_4.png"><span>{$Think.lang.bj}<span>&nbsp;&nbsp;&nbsp;{$data['hjvip']}</span></span></li>
+                    <li><img src="__WIMG__/team_5.png"><span>{$Think.lang.zs}<span>&nbsp;&nbsp;&nbsp;{$data['bjvip']}</span></span></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,338 @@
+html,
+body {
+    font-size: 10px;
+    background: rgb(243, 243, 243);
+}
+
+.imgBox {
+    background: rgb(34, 33, 39);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 1.5rem 0;
+    box-sizing: border-box;
+}
+
+.fd_r {
+    display: flex;
+    flex-direction: row;
+}
+.img1 {
+    display: block;
+}
+
+.img2 {
+    display: none;
+}
+.fd_r_a {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.btn_bg {
+    background: rgb(43, 106, 209);
+}
+
+.fd_r_b {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fd_c {
+    display: flex;
+    flex-direction: column;
+}
+
+.fd_c_b {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fd_c_b {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.dj_02 {
+    border-radius: .2rem;
+}
+
+.yin {
+    display: none;
+}
+
+.imgBox img {
+    height: 3rem;
+    margin-bottom: .5rem;
+}
+
+.imgBox>a {
+    width: 33.33%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.bg_f {
+    background: #fff;
+}
+
+.bd {
+    font-weight: bold;
+}
+
+.m {
+    margin: 2rem;
+}
+
+.ml_05 {
+    margin-left: .5rem;
+}
+
+.p {
+    padding: .5rem;
+}
+
+.pl_05 {
+    padding: .5rem;
+}
+
+.txtColor {
+    color: red !important;
+}
+
+.txt_200 {
+    color: rgb(200, 200, 200);
+}
+
+.txt_f {
+    color: #fff;
+}
+
+.txt_89 {
+    color: rgb(89, 88, 88);
+}
+
+.txt_91 {
+    color: rgb(91, 91, 91);
+}
+
+.clicss {
+    color: red;
+}
+
+.fs_12 {
+    font-size: 1.2rem;
+}
+
+.fs_16 {
+    font-size: 1.6rem;
+}
+
+.fs_18 {
+    font-size: 1.8rem;
+}
+.fs_14{
+    font-size: 1.4rem;
+}
+.h_9 {
+    height: 9rem
+}
+
+.h_20 {
+    height: 20rem;
+}
+
+.h_18 {
+    height: 18rem;
+}
+
+.h_6 {
+    height: 6rem;
+}
+
+a {
+    color: #fff;
+}
+
+.boder_r05 {
+    border-radius: .5rem;
+}
+
+.w_30 {
+    width: 30rem;
+}
+
+.w_8 {
+    width: 6rem;
+}
+
+.w1 {
+    width: 100%;
+}
+
+.w_10 {
+    width: 10rem;
+}
+
+.w_18 {
+    width: 18rem;
+}
+
+.h_3 {
+    height: 2.8rem;
+}
+
+.h_8 {
+    height: 8rem;
+}
+
+.fb {
+    font-weight: bold;
+}
+.w_13{
+    width:13rem;
+}
+.h_12 {
+    height: 12rem;
+}
+
+.h_15 {
+    height: 15rem;
+}
+.mb_05{
+    margin-bottom: .5rem;
+}
+.imgBox>div:after {
+    background-color: rgb(65, 64, 70);
+    bottom: 0;
+    content: "";
+    display: block;
+    position: absolute;
+    top: 6.5rem;
+    width: .2rem;
+    height: 4rem;
+    left: 34.5%;
+}
+
+.font-span {
+    font-size: .8rem;
+}
+
+.imgBox>div:nth-child(2):after {
+    left: 67%;
+}
+
+.imgBox>div:last-child::after {
+    display: none;
+}
+.main_l{
+    justify-content: space-between;
+}
+.mianL_z {
+    align-items: center;
+}
+.mainBox>li{
+    justify-content: center;
+}
+.mainBox{
+    background: rgb(243,243,243);
+}
+.mianL_z>li {
+    height: 2rem;
+    line-height:2rem;
+}
+.main_l{
+    margin-right:8%;
+}
+.input_b {
+    border: .1rem solid #ccc;
+}
+
+progress {
+    height: .4rem;
+}
+
+button {
+    width:15rem;
+    border-radius: .5rem;
+    height:3rem;
+    border: none;
+}
+input{
+    text-align: center;
+    width: 6rem;
+}
+/*.main-box{
+    width: 100%;
+    height:auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.mainBox>li{
+    background: #fff;
+    margin-bottom: 1rem;
+    padding-bottom:.5rem;
+}
+.main{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: center;
+    color:rgb(110, 110, 110);
+    background: #fff;
+    padding: .1rem 0;
+}
+.main>div>div>h2{
+    font-size: 1.8rem;
+    padding:1rem 0;
+}
+.mainRt{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    text-align: left;
+    height: 12rem;
+    font-size: 1.6rem;
+}
+
+.mainRt li{
+    flex:1;
+    line-height: 1.4rem;
+    font-size: 1.2rem;
+}
+.mainRt li:last-child input[type="text"]{
+    display: inline-block;
+    width: 6rem;
+    height:2rem;
+    line-height: 2rem;
+    border: 1px solid #ccc;
+    padding:.2rem .5rem;
+    border-radius: .2rem;
+    text-align: center;
+}
+.mainRt li:last-child input[type="submit"]{
+    width: 9rem;
+    height: 2.5rem;
+    border-radius: .3rem;
+    background: rgb(48,106,214);
+    color: #fff;
+    border: none;
+    margin-top:.5rem;
+
+}
+.mainRt li:last-child div:last-child{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}

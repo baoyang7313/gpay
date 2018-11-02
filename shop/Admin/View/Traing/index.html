@@ -1,0 +1,156 @@
+<extend name="Public/layout"/>
+<block name="style" >
+    <link rel="stylesheet" type="text/css" href="__LYUI__/css/lyui.extend.min.css">
+    <link rel="stylesheet" type="text/css" href="__ADMIN_CSS__/style.css">
+</block>
+
+<block name="main">
+    <div id="main" class="col-xs-12 col-sm-9 main" style="overflow-y: scroll;">
+        <!-- 面包屑导航 -->
+        <ul class="breadcrumb">
+            <li><i class="fa fa-map-marker"></i></li>
+            <li class="text-muted">系统</li>
+            <li class="text-muted">交易管理</li>
+            <li class="text-muted"><?php if (ACTION_NAME=='index') {
+                echo "定向交易";
+                }else{
+                echo "自由交易"; 
+                }
+                ?></li>
+
+        </ul>
+
+        <!-- 主体内容区域 -->
+        <div class="tab-content ct-tab-content">
+            <div class="panel-body">
+                <div class="builder formbuilder-box">
+
+                    <div class="form-group"></div>
+
+                    <!-- 顶部工具栏按钮 -->
+                    <div class="builder-toolbar">
+                        <div class="row">
+                            <!-- 搜索框 -->
+                            <div class="col-xs-12 col-sm-12 clearfix">
+                                <form class="form" method="get" action="">
+                                    <div class="form-group right">
+									     <div style="float:left;width:150px;margin-right:20px">
+											<input type="text" name="date_start" class="search-input form-control date" value="{$_GET.date_start}" placeholder="挂单开始日期">
+										</div>
+										<div style="float:left;width:150px;margin-right:20px">
+											<input type="text" name="date_end" class="search-input form-control date" value="{$_GET.date_end}" placeholder="挂单结束日期">
+										</div>	
+										<div style="float:left;width:150px;margin-right:20px" class="">
+											<select name="otype" class="form-control lyui-select select">
+												<option value="-1" <eq name="_GET['otype']" value="-1">selected="true"</eq>>=订单类型=</option>
+												<option value="0" <eq name="_GET['otype']" value="0" >selected="true"</eq>>卖出</option>
+												<option value="1" <eq name="_GET['otype']" value="1" >selected="true"</eq>>买入</option>
+											</select>                                            
+										</div>
+										<div style="float:left;width:150px;margin-right:20px" class="">
+											<select name="status" class="form-control lyui-select select">
+												<option value="-1" <eq name="_GET['status']" value="-1">selected="true"</eq>>=交易状态=</option>
+												<option value="0" <eq name="_GET['status']" value="0">selected="true"</eq>>未匹配</option>
+												<option value="1" <eq name="_GET['status']" value="1">selected="true"</eq>>已匹配</option>
+												<option value="2" <eq name="_GET['status']" value="2">selected="true"</eq>>交易中</option>
+												<option value="3" <eq name="_GET['status']" value="3">selected="true"</eq>>已完成</option>
+											</select>                                            
+										</div>
+										<div style="width:250px" class="input-group search-form">
+											<input  type="text" name="keyword" class="search-input form-control" value="{$_GET.keyword}" placeholder="姓名／账号">
+											<span class="input-group-btn"><a class="btn btn-default search-btn"><i class="fa fa-search"></i></a></span>
+										</div>																							                                      
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 数据列表 -->
+                    <div class="builder-container">
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <div class="builder-table">
+                                    <div class="panel panel-default table-responsive" style=" overflow:auto">
+                                        <table class="table table-bordered table-striped table-hover">
+                                            <thead>
+                                                <tr>
+                                                    <th>订单类型</th>
+                                                    <th>出售数量</th>
+                                                    <th>出售方</th>
+                                                    <th>购买方</th>
+                                                    <th>挂单时间</th>
+                                                    <th>配对时间</th>
+                                                    <th>打款时间</th>
+                                                    <th>打款凭证</th>
+                                                    <th>订单状态</th>
+                                                    <th>操作</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                            <volist name="list" id="data">
+                                                <tr>
+                                                    <td><eq name="data['trans_type']" value="1" >买入<else/>卖出</eq></td>
+                                                    <td>{$data['pay_nums']}</td>
+                                                    <td>{$data['payinfo']}</td>
+                                                    <td>{$data['buyinfo']}</td>
+                                                    <td>{$data['pay_time']|date='Y-m-d',###}<br/>{$data['pay_time']|date='H:i:m',###}</td>
+                                                    <td><gt name="data['pay_state']" value="0" >{$data['pair_time']|date='Y-m-d',###}<br/>{$data['pair_time']|date='H:i:m',###}<else/>-</gt></td>
+													<td><gt name="data['pay_state']" value="1" >{$data['update_time']|date='Y-m-d',###}<br/>{$data['update_time']|date='H:i:m',###}<else/>-</gt></td>                                                    
+                                                    <td>
+                                                        <div class="containera">
+                                                           <gt name="data['pay_state']" value="1"><a target="_blank" href="{$data['trans_img']}">查看凭证</a></gt>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+													    <eq name="data['pay_state']" value="0" >未匹配</eq>
+														<eq name="data['pay_state']" value="1" >已匹配</eq>
+														<eq name="data['pay_state']" value="2" >交易中</eq>
+														<eq name="data['pay_state']" value="3" >已完成</eq>
+													</td>
+                                                    <td>
+													<if condition="($data['pay_state'] eq 1) or ($data['pay_state'] eq 2)">												   
+                                                    <a title="撤销匹配" class="label label-warning-outline label-pill ajax-get confirm" href="{:U('Traing/optAction',array('opt'=>clear,'id'=>$data['id']))}">撤销匹配</a> 
+													<a title="惩罚买方" class="label label-warning-outline label-pill ajax-get confirm" href="{:U('Traing/optAction',array('opt'=>buy,'id'=>$data['id']))}">惩罚买方</a>                                                                                             
+                                                    <a title="确定交易" class="label label-success-outline label-pill ajax-get confirm" href="{:U('Traing/optAction',array('opt'=>setok,'id'=>$data['id']))}">确定交易</a> 
+													<a title="惩罚卖方" class="label label-success-outline label-pill ajax-get confirm" href="{:U('Traing/optAction',array('opt'=>pay,'id'=>$data['id']))}">惩罚卖方</a>
+													</if>
+                                                    </td>
+                                                </tr>
+                                            </volist>
+                                            <empty name="list">
+                                                <tr class="builder-data-empty">
+                                                    <td class="text-center empty-info" colspan="20">
+                                                        <i class="fa fa-database"></i> 暂时没有数据<br>
+                                                    </td>
+                                                </tr>
+                                            </empty>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <notempty name="table_data_page">
+                                        <ul class="pagination">{$table_data_page}</ul>
+                                    </notempty>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>                   
+    </div>
+</block>
+
+<block name="script">
+     <script type="text/javascript">
+        $('.date').datetimepicker({
+            format: 'yyyy-mm-dd',
+            language: "zh-CN",
+            minView: 2,
+            autoclose: true,
+            todayBtn: 1, //是否显示今日按钮
+        });
+    </script>
+    <script type="text/javascript" src="__LYUI__/js/lyui.extend.min.js"></script>
+</block>

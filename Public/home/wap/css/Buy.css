@@ -1,0 +1,197 @@
+html,body{
+    font-size:10px;
+    height: 100%;
+    background: rgb(243, 243, 243)
+}
+input,button{
+    border: none;
+}
+.w1{
+    width: 100%;
+}
+.fs_12{
+    font-size: 1.2rem;
+}
+.fs_16{
+    font-size: 1.6rem;
+}
+.fs_18{
+    font-size: 1.8rem;
+}
+.txt_49{
+    color: rgb(49,49,49);
+}
+.txt_12{
+    color: rgb(252,84,44);
+}
+.btnGreen{
+    background:rgb(9,168,24);
+    color:#fff;
+}
+.bgRed{
+    background:rgb(252,84,44);
+    color:#fff;
+}
+.txt_b{
+    color:#000;
+}
+.fgx{
+    margin:.5rem;
+}
+.fd_c{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+.fd_c_a{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.fd_c_b{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.fd_r{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+.fd_r_a{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.fd_r_b{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.txt_r{
+    color:rgb(255,0,0);
+}
+/* 交易 bar*/
+.tabBox{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background: #fff;
+}
+.tabBox>a{
+    display: block;
+}
+.tabBox>a>div{
+    height:4rem;
+    line-height:4rem;
+    font-size: 1.6rem;
+    text-align: center;
+}
+.underline{
+    border-bottom: .2rem solid rgb(102, 142, 246);
+    margin-bottom: .2rem;
+    color: rgb(102, 142, 246);
+}
+/*内容展示content*/
+.txtDenger{
+    color: rgb(213,99,75);
+}
+.txtGreen{
+    color:rgb(100,169,104);
+}
+.content{
+    text-align: center;
+    font-size: 1.8rem;
+    background: rgb(243,243,243);
+}
+.content_head{
+    width: 100%;
+    padding:.5rem 0;
+}
+.content_headt>div:first-child{
+    width: 16rem;
+}
+.content_head>div:last-child{
+    width: 13rem;
+}
+.w_13{
+    width: 13rem;
+    margin-left:1.5rem;
+}
+.buyL{
+    width:16rem;
+    height:38rem;
+}
+
+.buyL li{
+    width:16rem;
+    height:5rem; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    position: relative;
+}
+input[type='text']{
+    width: 13rem;
+    height:4rem;
+    background: #fff;
+    border:.1rem;
+    padding-left:1rem;
+    border-radius: .3rem;
+    font-size: 1.6rem;
+}
+.buyL button{
+    width:13rem;
+    height:3rem;
+    border-radius: .5rem;
+}
+.buyL li:nth-child(1):after{
+  content:'CNY';
+  width: 2rem;
+  height:3rem;
+  position: absolute;
+  bottom:5px;
+  right:3rem;
+  color:#000;
+}
+.buyL li:nth-child(2):after{
+  content:'GPC';
+  width: 2rem;
+  height:3rem;
+  position: absolute;
+  bottom:5px;
+  right:3rem;
+  color:#000;
+}
+.buyL li:nth-child(3):after{
+  content:'CGP';
+  width: 2rem;
+  height:3rem;
+  position: absolute;
+  bottom:5px;
+  right:3rem;
+  color:#000;
+}
+.buyR{
+    width: 13rem;
+    
+}
+.buyR ul{
+    width:100%;
+    height:19rem;
+}
+.buyR ul li{
+    width: 100%;
+    height:2rem;
+}
+
+
+

@@ -1,0 +1,839 @@
+[ 2018-08-03T10:29:47+08:00 ] 127.0.0.1 /Shop/home/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ysk_config` [ RunTime:0.0050s ]
+SQL: SELECT `value`,`tip` FROM `ysk_config` WHERE `name` = 'TOGGLE_WEB_SITE' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ysk_product_cate` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `ysk_product_cate` WHERE `pid` = 0 ORDER BY sort desc LIMIT 10   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ysk_shop_banner` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `ysk_shop_banner`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_product_detail` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `ysk_product_detail` WHERE `status` = 1 ORDER BY ctime desc LIMIT 5   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_product_detail` WHERE `is_hot` = 1 AND `shangjia` = 0 ORDER BY ctime desc LIMIT 6   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_product_detail` WHERE `is_new` = 1 AND `shangjia` = 0 ORDER BY ctime desc LIMIT 7   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `ysk_product_detail` WHERE `status` = 1 ORDER BY ctime asc LIMIT 8   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_product_detail` WHERE `is_tuijian` = 1 AND `shangjia` = 0 ORDER BY ctime desc LIMIT 8   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_notice` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `ysk_notice` ORDER BY notice_addtime asc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_gerenshangpu` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `ysk_gerenshangpu` WHERE `shop_zhuangtai` = 1 AND `id` <> 1 ORDER BY shop_stort asc LIMIT 9   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: config D:\gpays\Runtime\Cache\Shop\919d3b05d99b9010c89482cf5b988490.php 第 6 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-08-03T10:55:31+08:00 ] 127.0.0.1 /Shop/home/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ysk_config` [ RunTime:0.0100s ]
+SQL: SELECT `value`,`tip` FROM `ysk_config` WHERE `name` = 'TOGGLE_WEB_SITE' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ysk_product_cate` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `ysk_product_cate` WHERE `pid` = 0 ORDER BY sort desc LIMIT 10   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_shop_banner` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `ysk_shop_banner`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_product_detail` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `ysk_product_detail` WHERE `status` = 1 ORDER BY ctime desc LIMIT 5   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `ysk_product_detail` WHERE `is_hot` = 1 AND `shangjia` = 0 ORDER BY ctime desc LIMIT 6   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_product_detail` WHERE `is_new` = 1 AND `shangjia` = 0 ORDER BY ctime desc LIMIT 7   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_product_detail` WHERE `status` = 1 ORDER BY ctime asc LIMIT 8   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `ysk_product_detail` WHERE `is_tuijian` = 1 AND `shangjia` = 0 ORDER BY ctime desc LIMIT 8   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_notice` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `ysk_notice` ORDER BY notice_addtime asc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_gerenshangpu` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `ysk_gerenshangpu` WHERE `shop_zhuangtai` = 1 AND `id` <> 1 ORDER BY shop_stort asc LIMIT 9   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: config D:\gpays\Runtime\Cache\Shop\919d3b05d99b9010c89482cf5b988490.php 第 6 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-08-03T10:56:50+08:00 ] 127.0.0.1 /Shop/home/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ysk_config` [ RunTime:0.0090s ]
+SQL: SELECT `value`,`tip` FROM `ysk_config` WHERE `name` = 'TOGGLE_WEB_SITE' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_product_cate` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `ysk_product_cate` WHERE `pid` = 0 ORDER BY sort desc LIMIT 10   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ysk_shop_banner` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `ysk_shop_banner`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_product_detail` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `ysk_product_detail` WHERE `status` = 1 ORDER BY ctime desc LIMIT 5   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_product_detail` WHERE `is_hot` = 1 AND `shangjia` = 0 ORDER BY ctime desc LIMIT 6   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_product_detail` WHERE `is_new` = 1 AND `shangjia` = 0 ORDER BY ctime desc LIMIT 7   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_product_detail` WHERE `status` = 1 ORDER BY ctime asc LIMIT 8   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `ysk_product_detail` WHERE `is_tuijian` = 1 AND `shangjia` = 0 ORDER BY ctime desc LIMIT 8   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_notice` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `ysk_notice` ORDER BY notice_addtime asc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_gerenshangpu` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `ysk_gerenshangpu` WHERE `shop_zhuangtai` = 1 AND `id` <> 1 ORDER BY shop_stort asc LIMIT 9   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: config D:\gpays\Runtime\Cache\Shop\919d3b05d99b9010c89482cf5b988490.php 第 6 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-08-03T11:10:42+08:00 ] 192.168.1.79 /Shop/home/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ysk_config` [ RunTime:0.0100s ]
+SQL: SELECT `value`,`tip` FROM `ysk_config` WHERE `name` = 'TOGGLE_WEB_SITE' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_product_cate` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `ysk_product_cate` WHERE `pid` = 0 ORDER BY sort desc LIMIT 10   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_shop_banner` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `ysk_shop_banner`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_product_detail` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `ysk_product_detail` WHERE `status` = 1 ORDER BY ctime desc LIMIT 5   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_product_detail` WHERE `is_hot` = 1 AND `shangjia` = 0 ORDER BY ctime desc LIMIT 6   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `ysk_product_detail` WHERE `is_new` = 1 AND `shangjia` = 0 ORDER BY ctime desc LIMIT 7   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_product_detail` WHERE `status` = 1 ORDER BY ctime asc LIMIT 8   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_product_detail` WHERE `is_tuijian` = 1 AND `shangjia` = 0 ORDER BY ctime desc LIMIT 8   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ysk_notice` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `ysk_notice` ORDER BY notice_addtime asc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_gerenshangpu` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `ysk_gerenshangpu` WHERE `shop_zhuangtai` = 1 AND `id` <> 1 ORDER BY shop_stort asc LIMIT 9   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: config D:\gpays\Runtime\Cache\Shop\919d3b05d99b9010c89482cf5b988490.php 第 6 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-08-03T11:11:05+08:00 ] 192.168.1.79 /shop/Home/mend/sta/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ysk_config` [ RunTime:0.0100s ]
+SQL: SELECT `value`,`tip` FROM `ysk_config` WHERE `name` = 'TOGGLE_WEB_SITE' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_product_cate` [ RunTime:0.0100s ]
+NOTIC: [8] Undefined index: sousuo D:\gpays\shop\Shop\Controller\HomeController.class.php 第 414 行.
+SQL: SHOW COLUMNS FROM `ysk_product_detail` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `ysk_product_detail` WHERE `is_hot` = 1 AND `shangjia` = 0 ORDER BY ctime desc  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-08-03T11:11:15+08:00 ] 192.168.1.79 /Shop/Home/mend.html?sousuo=sousuo&name=uoi
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ysk_config` [ RunTime:0.0100s ]
+SQL: SELECT `value`,`tip` FROM `ysk_config` WHERE `name` = 'TOGGLE_WEB_SITE' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ysk_product_cate` [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `ysk_goods` [ RunTime:0.0120s ]
+SQL: SELECT pd.id,pd.type_id,pd.count_price,pd.jifen_nums,pd.name,pd.price,pd.pic,pd.status,pd.stock,pd.ctime,pc.id as cid,pc.name as cname FROM ysk_product_detail pd,ysk_product_cate pc WHERE pd.type_id=pc.id and pd.name like '%uoi%' and pd.is_duobao=1 [ RunTime:0.0000s ]
+SQL: SELECT pd.id,pd.type_id,pd.count_price,pd.jifen_nums,pd.name,pd.price,pd.pic,pd.status,pd.stock,pd.ctime,pc.id as cid,pc.name as cname FROM ysk_product_detail pd,ysk_product_cate pc WHERE pd.type_id=pc.id and pd.name like '%uoi%' and pd.is_duobao=1 [ RunTime:0.0010s ]
+SQL: SELECT * FROM `ysk_product_cate`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-08-03T11:11:20+08:00 ] 192.168.1.79 /shop/Home/mend/sta/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ysk_config` [ RunTime:0.0100s ]
+SQL: SELECT `value`,`tip` FROM `ysk_config` WHERE `name` = 'TOGGLE_WEB_SITE' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_product_cate` [ RunTime:0.0100s ]
+NOTIC: [8] Undefined index: sousuo D:\gpays\shop\Shop\Controller\HomeController.class.php 第 414 行.
+SQL: SHOW COLUMNS FROM `ysk_product_detail` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `ysk_product_detail` WHERE `is_hot` = 1 AND `shangjia` = 0 ORDER BY ctime desc  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-08-03T11:11:47+08:00 ] 192.168.1.79 /Shop/home/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ysk_config` [ RunTime:0.0130s ]
+SQL: SELECT `value`,`tip` FROM `ysk_config` WHERE `name` = 'TOGGLE_WEB_SITE' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_product_cate` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `ysk_product_cate` WHERE `pid` = 0 ORDER BY sort desc LIMIT 10   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_shop_banner` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `ysk_shop_banner`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_product_detail` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `ysk_product_detail` WHERE `status` = 1 ORDER BY ctime desc LIMIT 5   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `ysk_product_detail` WHERE `is_hot` = 1 AND `shangjia` = 0 ORDER BY ctime desc LIMIT 6   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_product_detail` WHERE `is_new` = 1 AND `shangjia` = 0 ORDER BY ctime desc LIMIT 7   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_product_detail` WHERE `status` = 1 ORDER BY ctime asc LIMIT 8   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `ysk_product_detail` WHERE `is_tuijian` = 1 AND `shangjia` = 0 ORDER BY ctime desc LIMIT 8   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_notice` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `ysk_notice` ORDER BY notice_addtime asc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_gerenshangpu` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `ysk_gerenshangpu` WHERE `shop_zhuangtai` = 1 AND `id` <> 1 ORDER BY shop_stort asc LIMIT 9   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: config D:\gpays\Runtime\Cache\Shop\919d3b05d99b9010c89482cf5b988490.php 第 6 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-08-03T11:12:34+08:00 ] 127.0.0.1 /Shop/member/mine.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ysk_config` [ RunTime:0.0110s ]
+SQL: SELECT `value`,`tip` FROM `ysk_config` WHERE `name` = 'TOGGLE_WEB_SITE' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_collect` [ RunTime:0.0120s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_collect` WHERE `uid` = 13655 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_verify_list` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `ysk_verify_list` WHERE `uid` = 13655 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `ysk_user` WHERE `userid` = 13655 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_store` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `ysk_store` WHERE `uid` = 13655 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: config D:\gpays\Runtime\Cache\Shop\443a66622bd99fc10f62d5fb4afa7a18.php 第 7 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-08-03T11:12:43+08:00 ] 127.0.0.1 /Shop/Home/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ysk_config` [ RunTime:0.0100s ]
+SQL: SELECT `value`,`tip` FROM `ysk_config` WHERE `name` = 'TOGGLE_WEB_SITE' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ysk_product_cate` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `ysk_product_cate` WHERE `pid` = 0 ORDER BY sort desc LIMIT 10   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ysk_shop_banner` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `ysk_shop_banner`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_product_detail` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `ysk_product_detail` WHERE `status` = 1 ORDER BY ctime desc LIMIT 5   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_product_detail` WHERE `is_hot` = 1 AND `shangjia` = 0 ORDER BY ctime desc LIMIT 6   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_product_detail` WHERE `is_new` = 1 AND `shangjia` = 0 ORDER BY ctime desc LIMIT 7   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `ysk_product_detail` WHERE `status` = 1 ORDER BY ctime asc LIMIT 8   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_product_detail` WHERE `is_tuijian` = 1 AND `shangjia` = 0 ORDER BY ctime desc LIMIT 8   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_notice` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `ysk_notice` ORDER BY notice_addtime asc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_gerenshangpu` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `ysk_gerenshangpu` WHERE `shop_zhuangtai` = 1 AND `id` <> 1 ORDER BY shop_stort asc LIMIT 9   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: config D:\gpays\Runtime\Cache\Shop\919d3b05d99b9010c89482cf5b988490.php 第 6 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-08-03T11:12:46+08:00 ] 127.0.0.1 /Shop/member/mine.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ysk_config` [ RunTime:0.0110s ]
+SQL: SELECT `value`,`tip` FROM `ysk_config` WHERE `name` = 'TOGGLE_WEB_SITE' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_collect` [ RunTime:0.0100s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_collect` WHERE `uid` = 13655 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ysk_verify_list` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `ysk_verify_list` WHERE `uid` = 13655 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `ysk_user` WHERE `userid` = 13655 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_store` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `ysk_store` WHERE `uid` = 13655 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: config D:\gpays\Runtime\Cache\Shop\443a66622bd99fc10f62d5fb4afa7a18.php 第 7 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-08-03T11:12:57+08:00 ] 127.0.0.1 /Shop/Home/cation.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ysk_config` [ RunTime:0.0070s ]
+SQL: SELECT `value`,`tip` FROM `ysk_config` WHERE `name` = 'TOGGLE_WEB_SITE' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_product_cate` [ RunTime:0.0070s ]
+SQL: SELECT `id`,`pid`,`pic`,`name`,`type` FROM `ysk_product_cate` WHERE `pid` = 0 AND `is_duobao` = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_gerenshangpu` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `ysk_gerenshangpu` WHERE `shop_type` = 1 AND `id` <> 1  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_gerenshangpu` WHERE `shop_type` = 2 AND `id` <> 1  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_gerenshangpu` WHERE `shop_type` = 3 AND `id` <> 1  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `ysk_gerenshangpu` WHERE `shop_type` = 4 AND `id` <> 1  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_gerenshangpu` WHERE `shop_type` = 5 AND `id` <> 1  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_gerenshangpu` WHERE `shop_type` = 6 AND `id` <> 1  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `ysk_gerenshangpu` WHERE `shop_type` = 7 AND `id` <> 1  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_gerenshangpu` WHERE `shop_type` = 8 AND `id` <> 1  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_gerenshangpu` WHERE `shop_type` = 9 AND `id` <> 1  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_gerenshangpu` WHERE `shop_type` = 10 AND `id` <> 1  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: config D:\gpays\Runtime\Cache\Shop\b2fafe71e0f1a16ea003b06dbaaae67d.php 第 6 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-08-03T11:13:02+08:00 ] 192.168.1.79 /Shop/home/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ysk_config` [ RunTime:0.0070s ]
+SQL: SELECT `value`,`tip` FROM `ysk_config` WHERE `name` = 'TOGGLE_WEB_SITE' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_product_cate` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `ysk_product_cate` WHERE `pid` = 0 ORDER BY sort desc LIMIT 10   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_shop_banner` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `ysk_shop_banner`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_product_detail` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `ysk_product_detail` WHERE `status` = 1 ORDER BY ctime desc LIMIT 5   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_product_detail` WHERE `is_hot` = 1 AND `shangjia` = 0 ORDER BY ctime desc LIMIT 6   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_product_detail` WHERE `is_new` = 1 AND `shangjia` = 0 ORDER BY ctime desc LIMIT 7   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_product_detail` WHERE `status` = 1 ORDER BY ctime asc LIMIT 8   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_product_detail` WHERE `is_tuijian` = 1 AND `shangjia` = 0 ORDER BY ctime desc LIMIT 8   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_notice` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `ysk_notice` ORDER BY notice_addtime asc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_gerenshangpu` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `ysk_gerenshangpu` WHERE `shop_zhuangtai` = 1 AND `id` <> 1 ORDER BY shop_stort asc LIMIT 9   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: config D:\gpays\Runtime\Cache\Shop\919d3b05d99b9010c89482cf5b988490.php 第 6 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-08-03T11:17:13+08:00 ] 192.168.1.79 /Shop/dianpu/index/did/13655.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ysk_config` [ RunTime:0.0100s ]
+SQL: SELECT `value`,`tip` FROM `ysk_config` WHERE `name` = 'TOGGLE_WEB_SITE' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_gerenshangpu` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `ysk_gerenshangpu` WHERE `userid` = 13655 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2018-08-03T13:32:58+08:00 ] 192.168.1.82 /Shop/dianpu/index/did/13655.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ysk_config` [ RunTime:0.0100s ]
+SQL: SELECT `value`,`tip` FROM `ysk_config` WHERE `name` = 'TOGGLE_WEB_SITE' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_gerenshangpu` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `ysk_gerenshangpu` WHERE `userid` = 13655 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2018-08-03T13:58:16+08:00 ] 192.168.1.79 /Shop/home/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ysk_config` [ RunTime:0.0150s ]
+SQL: SELECT `value`,`tip` FROM `ysk_config` WHERE `name` = 'TOGGLE_WEB_SITE' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_product_cate` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `ysk_product_cate` WHERE `pid` = 0 ORDER BY sort desc LIMIT 10   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ysk_shop_banner` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `ysk_shop_banner`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_product_detail` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `ysk_product_detail` WHERE `status` = 1 ORDER BY ctime desc LIMIT 5   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_product_detail` WHERE `is_hot` = 1 AND `shangjia` = 0 ORDER BY ctime desc LIMIT 6   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `ysk_product_detail` WHERE `is_new` = 1 AND `shangjia` = 0 ORDER BY ctime desc LIMIT 7   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_product_detail` WHERE `status` = 1 ORDER BY ctime asc LIMIT 8   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_product_detail` WHERE `is_tuijian` = 1 AND `shangjia` = 0 ORDER BY ctime desc LIMIT 8   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ysk_notice` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `ysk_notice` ORDER BY notice_addtime asc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_gerenshangpu` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `ysk_gerenshangpu` WHERE `shop_zhuangtai` = 1 AND `id` <> 1 ORDER BY shop_stort asc LIMIT 9   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: config D:\gpays\Runtime\Cache\Shop\919d3b05d99b9010c89482cf5b988490.php 第 6 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-08-03T13:58:30+08:00 ] 192.168.1.79 /shop/Home/mend/sta/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ysk_config` [ RunTime:0.0110s ]
+SQL: SELECT `value`,`tip` FROM `ysk_config` WHERE `name` = 'TOGGLE_WEB_SITE' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_product_cate` [ RunTime:0.0110s ]
+NOTIC: [8] Undefined index: sousuo D:\gpays\shop\Shop\Controller\HomeController.class.php 第 414 行.
+SQL: SHOW COLUMNS FROM `ysk_product_detail` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `ysk_product_detail` WHERE `is_new` = 1 AND `shangjia` = 0 ORDER BY ctime desc  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-08-03T13:58:34+08:00 ] 192.168.1.79 /Shop/Home/cation.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ysk_config` [ RunTime:0.0110s ]
+SQL: SELECT `value`,`tip` FROM `ysk_config` WHERE `name` = 'TOGGLE_WEB_SITE' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_product_cate` [ RunTime:0.0110s ]
+SQL: SELECT `id`,`pid`,`pic`,`name`,`type` FROM `ysk_product_cate` WHERE `pid` = 0 AND `is_duobao` = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_gerenshangpu` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `ysk_gerenshangpu` WHERE `shop_type` = 1 AND `id` <> 1  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_gerenshangpu` WHERE `shop_type` = 2 AND `id` <> 1  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `ysk_gerenshangpu` WHERE `shop_type` = 3 AND `id` <> 1  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_gerenshangpu` WHERE `shop_type` = 4 AND `id` <> 1  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_gerenshangpu` WHERE `shop_type` = 5 AND `id` <> 1  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_gerenshangpu` WHERE `shop_type` = 6 AND `id` <> 1  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_gerenshangpu` WHERE `shop_type` = 7 AND `id` <> 1  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_gerenshangpu` WHERE `shop_type` = 8 AND `id` <> 1  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_gerenshangpu` WHERE `shop_type` = 9 AND `id` <> 1  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `ysk_gerenshangpu` WHERE `shop_type` = 10 AND `id` <> 1  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: config D:\gpays\Runtime\Cache\Shop\b2fafe71e0f1a16ea003b06dbaaae67d.php 第 6 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-08-03T13:58:37+08:00 ] 192.168.1.79 /shop/dianpu/index/did/1715
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ysk_config` [ RunTime:0.0110s ]
+SQL: SELECT `value`,`tip` FROM `ysk_config` WHERE `name` = 'TOGGLE_WEB_SITE' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ysk_gerenshangpu` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `ysk_gerenshangpu` WHERE `userid` = 1715 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_product_detail` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `ysk_product_detail` WHERE `shangjia` = 1715 AND `gr_tuijian` = 1 ORDER BY old_price desc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_product_detail` WHERE `shangjia` = 1715 AND `gr_new` = 1 ORDER BY ctime desc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_product_detail` WHERE `shangjia` = 1715 AND `gr_hot` = 1 ORDER BY ctime desc  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `ysk_product_detail` WHERE `shangjia` = 1715 ORDER BY ctime desc  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-08-03T13:58:45+08:00 ] 192.168.1.79 /Shop/Car/shopping.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ysk_config` [ RunTime:0.0110s ]
+SQL: SELECT `value`,`tip` FROM `ysk_config` WHERE `name` = 'TOGGLE_WEB_SITE' LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: config D:\gpays\Runtime\Cache\Shop\0a5b76a9b9d8cfc06f7b548818528bac.php 第 5 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-08-03T15:09:39+08:00 ] 192.168.1.82 /Shop/member/addresslist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ysk_config` [ RunTime:0.0050s ]
+SQL: SELECT `value`,`tip` FROM `ysk_config` WHERE `name` = 'TOGGLE_WEB_SITE' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_address` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `ysk_address` WHERE `member_id` = '13655'  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: config D:\gpays\Runtime\Cache\Shop\a86f493aac8cb99e74e6398de9d46e46.php 第 5 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-08-03T16:10:28+08:00 ] 192.168.1.82 /Shop/member/addresslist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ysk_config` [ RunTime:0.0110s ]
+SQL: SELECT `value`,`tip` FROM `ysk_config` WHERE `name` = 'TOGGLE_WEB_SITE' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ysk_address` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `ysk_address` WHERE `member_id` = '13655'  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: config D:\gpays\Runtime\Cache\Shop\a86f493aac8cb99e74e6398de9d46e46.php 第 5 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-08-03T16:15:44+08:00 ] 192.168.1.82 /Shop/member/addresslist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ysk_config` [ RunTime:0.0110s ]
+SQL: SELECT `value`,`tip` FROM `ysk_config` WHERE `name` = 'TOGGLE_WEB_SITE' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_address` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `ysk_address` WHERE `member_id` = '13655'  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: config D:\gpays\Runtime\Cache\Shop\a86f493aac8cb99e74e6398de9d46e46.php 第 5 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-08-03T17:19:25+08:00 ] 192.168.1.82 /Shop/member/addresslist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ysk_config` [ RunTime:0.0110s ]
+SQL: SELECT `value`,`tip` FROM `ysk_config` WHERE `name` = 'TOGGLE_WEB_SITE' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_address` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `ysk_address` WHERE `member_id` = '13655'  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: config D:\gpays\Runtime\Cache\Shop\a86f493aac8cb99e74e6398de9d46e46.php 第 5 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-08-03T17:22:48+08:00 ] 192.168.1.82 /Shop/member/addresslist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ysk_config` [ RunTime:0.0110s ]
+SQL: SELECT `value`,`tip` FROM `ysk_config` WHERE `name` = 'TOGGLE_WEB_SITE' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_address` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `ysk_address` WHERE `member_id` = '13655'  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: config D:\gpays\Runtime\Cache\Shop\a86f493aac8cb99e74e6398de9d46e46.php 第 5 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-08-03T17:25:53+08:00 ] 192.168.1.82 /Shop/member/addresslist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ysk_config` [ RunTime:0.0110s ]
+SQL: SELECT `value`,`tip` FROM `ysk_config` WHERE `name` = 'TOGGLE_WEB_SITE' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ysk_address` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `ysk_address` WHERE `member_id` = '13655'  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: config D:\gpays\Runtime\Cache\Shop\a86f493aac8cb99e74e6398de9d46e46.php 第 5 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-08-03T17:34:23+08:00 ] 192.168.1.82 /Shop/member/addresslist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ysk_config` [ RunTime:0.0110s ]
+SQL: SELECT `value`,`tip` FROM `ysk_config` WHERE `name` = 'TOGGLE_WEB_SITE' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ysk_address` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `ysk_address` WHERE `member_id` = '13655'  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: config D:\gpays\Runtime\Cache\Shop\a86f493aac8cb99e74e6398de9d46e46.php 第 5 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-08-03T17:42:49+08:00 ] 192.168.1.82 /Shop/member/addresslist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ysk_config` [ RunTime:0.0120s ]
+SQL: SELECT `value`,`tip` FROM `ysk_config` WHERE `name` = 'TOGGLE_WEB_SITE' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_address` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `ysk_address` WHERE `member_id` = '13655'  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: config D:\gpays\Runtime\Cache\Shop\a86f493aac8cb99e74e6398de9d46e46.php 第 5 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+

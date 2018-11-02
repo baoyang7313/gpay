@@ -1,0 +1,166 @@
+html,body{
+    font-size:62.5%;
+    height: 100%;
+    background: rgb(243, 243, 243)
+}
+input{
+    border: none;
+}
+/* 交易 bar*/
+.tabBox{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background: #fff;
+}
+.tabBox>a{
+    display: block;
+}
+.tabBox>a>div{
+    height:4rem;
+    line-height:4rem;
+    font-size: 1.6rem;
+    text-align: center;
+}
+.underline{
+    border-bottom: .2rem solid rgb(26, 126, 203);
+    margin-bottom: .2rem;
+    color: rgb(26, 126, 203);
+}
+/*内容展示content*/
+.txtDenger{
+    color: rgb(213,99,75);
+}
+.txtGreen{
+    color:rgb(100,169,104);
+}
+.content{
+    text-align: center;
+    font-size: 1.8rem;
+    background: rgb(243,243,243);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.contentTop{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 1rem;
+}
+.contentLf{
+    width: 18rem;
+}
+.contentLf>ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.contentLf>ul>li{
+    height: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;align-items: center;
+}
+.contentLf>ul>li:first-child{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 1rem;
+    text-align: center;
+    align-items: center;
+}
+.contentLf>ul>li:first-child div{
+    height:5rem;
+    color: red;
+    line-height: 5rem;
+}
+li>input[type="text"]{
+    width: 14rem;
+    height:4rem;
+    border-radius: .5rem;
+    padding-left:.5rem;
+}
+li>button{
+    width: 14rem;
+    height:3.5rem;
+    border: 1px solid rgb(198,45,37);
+    color: rgb(198,45,37);
+    border-radius: .5rem;
+    padding: 0 0.25rem;
+}
+.contentRt{
+    width: 18rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; 
+    font-size: 1rem;
+    position: relative;
+}
+.contentRt-box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items:center;
+    color:rgb(99,154,97);
+    height: 2rem;
+}
+.contentRt-box:first-child{
+    font-size: 1.6rem;
+    color:#000;
+}
+.contentRt-box div{
+    width: 33.33%
+}
+.hidden{
+   width: 14rem;
+   height:4rem;
+   line-height: 4rem;
+   background:#fff; 
+   color: red;
+   font-size: 1.8rem;
+   border-radius: .5rem;
+   text-align: left;
+   align-self: center;
+   position: absolute;
+   bottom:.5rem;
+}
+/*content的bootom*/
+.contentBottom{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+.contentBottom-Lf{
+    width: 18rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.contentBottom-Lf div{
+    width: 14rem;
+    height:4rem;
+    color:red;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background: #fff;
+    border: .1rem solid rgb(225, 225,225);
+    border-radius: .5rem;
+}
+.contentBottom-Rt{
+    width:18rem;
+}
+.contentBottom-Rt .contentRt-box{
+    font-size: 1rem;
+}
+.contentBottom-Rt .contentRt-box:first-child{
+    font-size: 1.6rem;
+}
+
+
+

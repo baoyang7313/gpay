@@ -1,0 +1,43 @@
+html,body{
+    font-size:62.5%;
+    height: 100%;
+}
+/* 交易 bar*/
+.container{
+   width: 100%;
+   height:100%;
+   float:left;
+}
+.tabBox{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+.tabBox>a{
+    display: block;
+}
+.tabBox>a>div{
+    height:4rem;
+    line-height:4rem;
+    font-size: 1.6rem;
+    text-align: center;
+}
+.underline{
+    border-bottom: .2rem solid rgb(26, 126, 203);
+    margin-bottom: .2rem;
+    color: rgb(26, 126, 203);
+}
+/*数据展示*/
+.content{
+    float:left;
+    width: 100%;
+    height:100%;
+    background: rgb(243, 243, 243);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color:#000;
+    font-size: 2rem;
+}

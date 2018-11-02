@@ -1,0 +1,178 @@
+html{
+    height:100%;
+    font-size: 62.5%;
+    background: rgb(243,243,243)
+}
+.color_b{
+    color:rgb(94,115,208);
+}
+.color_c{
+    color:#ccc;
+}
+.color_f{
+    color:#fff;
+}
+.color_0{
+    color:#000;
+}
+.bg_f{
+    background: #fff;
+}
+.bg{
+    background:rgb(243,243,243);
+}
+.W_1{
+    width:100%;
+}
+.bd_05{
+    border-radius: .5rem;
+}
+.W_09{
+    width: 90%;
+}
+.W_03{
+    width: 33.33%;
+}
+.fs_10{
+    font-size: 1rem;
+}
+.fs_12{
+    font-size: 12rem;
+}
+.fs_16{
+    font-size: 16rem;
+}
+.fs_18{
+    font-size: 18rem;
+}
+.mt_5{
+    margin-top:.5rem;
+}
+.mt_10{
+    margin-top: 1rem;
+}
+.fg{
+    flex-wrap: wrap;
+}
+.fd_c{
+    display: flex;
+    flex-direction:column; 
+    justify-content: space-around;
+    align-items: center;
+}
+.block{
+    display: block;
+}
+
+.fd_r{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.pd_f10{
+    padding-left:10%;
+}
+.h_100{
+    height:100%;
+}
+.box_show{
+    box-shadow: .2rem .2rem 5px #888888;
+}
+.b_none{
+    display: none;
+}
+.section_ul{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+.content{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background: #fff;
+}
+.section_ul li{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    border: .1rem solid #ccc;
+}
+.section_ul li>p{
+    width: 90%;
+    color:#000;
+    padding: 0 1rem;
+}
+.top{
+    height:4rem;
+    font-size: 1.8rem;
+    font-weight: bold;
+    justify-content: space-between;
+}
+.center{
+    height:4.5rem;
+    justify-content: flex-start;
+}
+.center_two{
+    width: 50%;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.center span{
+    height:20px;
+    font-size: 1.4rem;
+    color:rgb(124,124,124);
+}
+a{
+    color: #375AD1;
+}
+.center>span:first-child{
+    text-align: left;
+}
+.section_ul li>.bottom{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.6rem;
+    font-weight: bold;
+    width: 100%;
+    background: rgb(242,242,242);
+    border:.1rem solid #ccc;
+    line-height: 41px;
+    position: relative;
+    border-bottom:none;
+}
+.section_ul li>.bottom span{
+    width: 50%;
+}
+.section_ul li>.bottom span:last-child{
+    border:none;
+}
+/*二维码*/
+.ewm{
+    height:100%;
+    background: rgba(227,227,227,0.7);
+    position: absolute;
+    top:0;
+
+}
+.ewm div{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+.ewm_box{
+    position: relative;
+}
+.ewm_box>b{
+    position: absolute;
+    right:.1rem;
+    top:-2.1rem;
+}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0,minimal-ui">
+  <title>商家系统</title>
+  <link rel="stylesheet" href="__CSS__/3db_style.css">
+  <link rel="stylesheet" href="__ICON__/3db_iconfont.css">
+
+  <!-- 轮播图 -->
+  <script type="text/javascript" src="__JS__/jquery-1.7.1.min.js"></script>
+
+  <script type="text/javascript" src="__JS__/jquery.touchSlider.js"></script>
+  <script type="text/javascript" src="__JS__/js.js"></script>
+  <script type="text/javascript" src="__JS__/3db_layer.js"></script>
+
+</head>
+<body>
+  <!-- 轮播图 -->
+    <div class="fxm_header">
+       <div class="fxm_left">
+           <a href="{:U('shop/home/index')}"><img src="__IMG__/b1.png" alt=""></a>
+       </div>
+       <div class="fxm_center">{$title|default='支付'}</div>
+    </div>
+     <body style="background: #f6f5fb;" data-id="{$order['order_no']}">
+
+
+<link rel="stylesheet" href="__CSS__/dizhi.css">
+<div style="margin-top: 13vmin"></div>
+<style type="text/css">
+  label{
+    width: 80%;
+    display: inline-block;
+  }
+
+</style>
+<div class="commoditys">
+  <div class="commoditys-left">
+    <img src="__IMG__/ept_1.jpg" alt="">
+  </div>
+  <div class="commoditys-right">
+    <h1>订单号：{$info.order_no}</h1>
+    <h3 style="color: inherit;" >订单总额：<span style="color:#FF2626" >￥{$info.order_total_price}</span></h3>
+  </div>
+</div>
+<div class="clear"></div>
+
+  <div class="methods">
+    <h1>请选择支付方式</h1>
+    <p>
+    <i class="iconfont" style="color: #f04f37">&#xe60e;</i>
+
+    <label for="money">Gpays支付（余额：{$money}元）</label>
+    <input id="money" type="radio" name="payway" value="1">
+    </p>
+  </div>
+
+  <div class="lijizhifu">
+    <a href="javascript:Pay()">立即支付</a>
+  </div>
+  <input type="hidden" id="order_id" value="" >
+<script type="text/javascript">
+  
+  function Pay(){
+      var payway=$("input[name='payway']:checked").val();
+      if(typeof(payway)=='undefined'){
+        layer.open({
+          content:  '请选择支付方式'
+          ,btn: '我知道了'
+        });
+        return;
+      }
+      var id=$('#order_id').val();
+      var post_data={'paytype':payway,'id':id};
+      $.ajax({
+           type: "POST",
+           url: "",
+           data:post_data,
+           dataType: "json",
+           success: function(data){
+              if(data.status==1){
+                window.location.href=data.url;
+              }else{
+                layer.open({
+                  content:  data.info
+                  ,btn: '我知道了'
+                });
+              }
+            }    
+        });
+  }
+
+</script>
+
+
+  </body>
+</html>

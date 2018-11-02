@@ -1,0 +1,67 @@
+
+       <include file="common:css" />
+ 
+    <!-- 头部 -->
+      <include file="common:head" />
+      <!-- 头部结束 -->
+      <!-- 左侧 -->
+      <include file="common:side" />
+
+		<div class="hyxq">
+			<div class="hyxq_bottom">
+				<h3>订单详情</h3>
+
+
+		
+            
+
+
+
+				<table class="content_table3">
+					<tr>
+						<td>订单编号</td>
+						<td>{$v.gms_id}</td>
+					</tr>
+					<tr>
+						<td>会员姓名</td>
+						<td><?php echo M('users')->where("userid=$v[gms_pid]")->getField('username');?></td>
+					</tr>
+					<tr>
+						<td>会员手机</td>
+						<td><?php echo M('users')->where("userid=$v[gms_pid]")->getField('mobile');?></td>
+					</tr>
+					
+				
+					
+					<tr>
+						<td>会员级别</td>
+						<td>
+						 <?php
+					    switch($v['gms_vip']){
+						
+						case 4: echo "【金牌会员】"; break;
+						case 3: echo "【银牌会员】"; break;
+						case 2: echo "【铜牌会员】"; break;
+						case 1: echo "【vip会员】"; break;
+						case 0: echo "【普通会员】"; break;	
+					    }
+						?>
+					
+						</td>
+					</tr>
+					
+					<tr>
+						<td>商品名称</td>
+						<td>{$v.gms_spname}</td>
+					</tr>
+					<tr>
+						<td>商品原价</td>
+						<td>{$v.gms_yj}</td>
+					</tr>
+					<tr>
+						<td>商品现价</td>
+						<td>{$v.gms_xj}</td>
+					</tr>
+					<tr>
+						<td>商品重量</td>
+						<td>{$v.gms_zl}<

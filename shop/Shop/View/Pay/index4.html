@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>商家系统</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <meta name="format-detection" content="telephone=no"/>
+
+    <!-- Link Swiper's CSS -->
+    <!-- <link rel="stylesheet" type="text/css" href="iconfont/iconfont.css"> -->
+    <script type="text/javascript" src="__JS__/jquery-1.7.1.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="__CSS__/style.css">
+    <link rel="stylesheet" type="text/css" href="__RES__/iconfont/iconfont.css">
+
+    <!-- <link rel="stylesheet" href="__CSS__/swiper.min.css"> -->
+    <link rel="stylesheet" href="__CSS__/head.css">
+
+    <link rel="stylesheet" href="/Public/shop/css/css.css">
+
+    <!--弹框JS-->
+    <script type="text/javascript" src="__LAYERJS__/layer.js"></script>
+    <!-- Demo styles -->
+    <style>
+    	.buynow ul{padding-left:5%;}
+		.buynow ul li{height:15vmin; position:relative; padding:1vmin 0; clear:both;}
+		.buynow ul li i{margin-top:0.8vmin;}
+
+		.buynowh3{background-color:#fff; font-size:3.7vmin;}
+		.buynow ul li span{display:block; width:40%; height:18vmin; line-height:18vmmin; position:relative; float:left; vertical-align:middle;}
+		.buynow ul li div{width:50%; height:18vmin; line-height:18vmmin; position:absolute; float:right; right:0; text-align:right; padding-right:3%;}
+		.buynow ul li div .codeimg{display:inline-block; width:11vmin; height:11vmin; background-color:#ccc; vertical-align:middle; margin-right:1vmin; vertical-align:middle;}
+		.img_mar{display:inline-block; width:6vmin; height:6vmin; vertical-align:middle;}
+		.paystyle1{ display:block; width:7.8vmin; height:7.8vmin; vertical-align:middle; float:left; padding-right:2vmin;}
+		.paystyle1 img{width:7.8vmin; height:7.8vmin;}
+    </style>
+</head>
+<body style="background: #f6f5fb;" data-id="{$order['order_no']}">
+
+<div class="header">
+    <div class="header_l" style="width: 15%;">
+        <a href="{:U('shop/home/index')}"><img src="__IMG__/b1.png" alt=""></a>
+    </div>
+    <div class="header_c" style="width: 70%;"> <h1 style="color:#000">支付</h1></div>
+    <!--<div class="header_r" style="width: 15%;"><a href="{:U('Public/news')}"><em class="xxd"></em><i class="iconfont"></i><p>消息</p></a></div>-->
+    <!-- <span><a href=""><img src="" alt=""></a></span> -->
+</div>
+
+
+<div class="buynowh3">
+    请选择付款方式扫码支付
+</div>
+
+    <div class="img-container buynow">
+        <ul>
+            <a href="{:U('Pay/pays',array('oid'=>$order['order_id'],'type'=>4))}">
+             <li><span><i class="iconfont paystyle1"><img src="__IMG__/zhifu4.png" alt=""></i> Gpays支付({$farmlink_jifen})</span><div><img src="__IMG__/icon_editnext.png" class="img_mar"></div></li>
+            </a>
+
+      </ul>
+    </div>
+    <div style="height: 10vmin;"></div>
+
+
+<script type="text/javascript">
+
+    /*选中消费积分支付不显示赠送积分*/
+    $("input[name='paytype']").change(function () {
+        var pay_type = $("input[name='paytype']:checked").val();
+        if (pay_type == 4) {
+            $('.paytypes').hide();
+        } else {
+            $('.paytypes').show();
+        }
+    });
+
+    $("#pay_yes").click(function () {
+        $("#shadow_div").show("200");
+    });
+
+    $("#pay_close").click(function () {
+        $("#shadow_div").hide("200");
+    });
+
+
+    $("#pay_submit").click(function () {
+        //验证数据
+        var pay_type = $("input[name='paytype']:checked").val();
+        var ono = $("body").attr("data-id");
+        var pwd = $("input[name='pay_pwd']").val();
+        var or_no = $("body").attr("data-id");
+        $(".order_no").val(ono);
+        /*选择积分类型*/
+        var jifentypes = $("#jifentype").val();
+
+        if (!pwd) {
+            layer.msg('请输入二级密码', {icon: 5,time: 1500});
+            return;
+        }
+
+        if (!ono) {
+            layer.msg('该订单不存在', {icon: 5,time: 1500});
+            return;
+        }
+
+        $.post("/Shop/Pay/pay", {ptype: pay_type, ono: ono, pwd: pwd, jifentypes: jifentypes}, function (data) {
+            if (data.status == "1") {
+                if(data.info == 2){
+                    window.location.href = "{:U('Shop/pay/apily',array('order_no'=>$order['order_no']))}";
+                    return;
+                }
+                layer.msg(data.info, {icon: 1,time: 1500}, function () {
+                    $("#shadow_div").hide("200");
+                    window.location.href = "{:U('/shop/home/index')}";
+                });
+            } else {
+                layer.msg(data.info, {shift: -1, time: 1500}, function () {
+                });
+            }
+        }, "json");
+    });
+</script>
+
+
+
+<script type="text/javascript">
+    $(".codeimg").click(function(){
+        var img = $(this).attr("src");
+
+        shop_qrcode(img);
+
+    });
+    function shop_qrcode(img){
+        layer.open({
+          type: 1,
+          title: false,
+          shadeClose: true,
+          closeBtn: false,
+          shade: 0.5,
+          area: ['250', '250'],
+          content: '<img   src="'+img+'" style="width:250px;height:250px;display:block;margin:0 auto;">' //iframe的url
+        });
+
+    }
+</script>
+</body>
+</html>

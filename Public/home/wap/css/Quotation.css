@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+.fs_18 {
+    font-size: 1.8rem;
+}
+
+html {
+    font-size: 62.5%;
+    color: #fff;
+    height: 100%;
+    background: rgb(34, 33, 39)
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.head {
+    background-image: url('../images/Quotation/bg.png');
+    background-size: contain;
+    width: 100%;
+    padding: 1rem 0;
+}
+
+.container h1 {
+    width: 100%;
+    height: 4.4rem;
+    line-height: 4.4rem;
+}
+
+ul.nav {
+    /* width: 30rem;
+    height:8rem; */
+    margin: 2rem auto;
+}
+
+ul.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+ul.nav>li div>div {
+    color: #fff;
+}
+
+/* ul.nav li {
+    width:7rem;
+    height:8rem;
+} */
+
+.body {
+    background-color: rgb(34, 33, 39);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.wz_hidden {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 6.5rem;
+}
+
+.box>div:nth-child(2)>h1 {
+    text-align: left;
+}
+
+.bg>div:nth-child(2)>h1 {
+    text-align: center;
+}
+
+.box>div>h1 {
+    line-height: 4.4rem;
+}
+
+.box>div {
+    width: 8rem;
+    height: 4.4rem;
+}
+
+.first-span-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 3rem;
+    text-align: left;
+    margin-left: .5rem;
+}
+
+.first-span span:first-child {
+    font-size: 1.4rem;
+    color: #fff;
+}
+
+.first-span-box span:last-child {
+    width: 6.5rem;
+    font-size: .8rem;
+    color: rgb(131, 133, 145);
+    margin-top: .5rem;
+}
+
+.box div:last-child {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.aBox {
+    display: block;
+}
+
+.box div:last-child h1 {
+    width: 6.5rem;
+    height: 3rem;
+    line-height: 3rem;
+    background: rgb(233, 39, 39);
+    border-radius: .4rem;
+}
+
+div.first-span {
+    width: 10rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0.1rem;
+}
+
+div.bg div h1 {
+    font-size: 1.8rem;
+}
+
+div.bg div:last-child h1 {
+    background: rgb(34, 33, 39);
+}
+
+.foot {
+    width: 100%;
+    height: 4.5rem;
+    background: rgb(26, 27, 31);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    position: fixed;
+    bottom: 0;
+}
+
+.footBox {
+    width: 4.9rem;
+    height: 4.9rem;
+}

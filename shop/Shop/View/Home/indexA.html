@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>首页</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no" />
+
+    <!-- Link Swiper's CSS -->
+    
+    <link rel="stylesheet" type="text/css" href="__CSS__/style.css">
+    <link rel="stylesheet" type="text/css" href="__CSS__/foot.css">
+
+    <link rel="stylesheet" href="__CSS__/head.css">
+    <link rel="stylesheet" href="__ICON__/iconfont.css">
+    <script type="text/javascript" src="__JS__/jquery-1.7.1.min.js"></script>
+
+    <script type="text/javascript" src="__JS__/jquery.touchSlider.js"></script>    
+    <!-- Demo styles -->
+<script type="text/javascript">
+$(document).ready(function(){
+
+    $(".main_visual").hover(function(){
+        $("#btn_prev,#btn_next").fadeIn()
+    },function(){
+        $("#btn_prev,#btn_next").fadeOut()
+    });
+    
+    $dragBln = false;
+    
+    $(".main_image").touchSlider({
+        flexible : true,
+        speed : 200,
+        btn_prev : $("#btn_prev"),
+        btn_next : $("#btn_next"),
+        paging : $(".flicking_con a"),
+        counter : function (e){
+            $(".flicking_con a").removeClass("on").eq(e.current-1).addClass("on");
+        }
+    });
+    
+    $(".main_image").bind("mousedown", function() {
+        $dragBln = false;
+    });
+    
+    $(".main_image").bind("dragstart", function() {
+        $dragBln = true;
+    });
+    
+    $(".main_image a").click(function(){
+        if($dragBln) {
+            return false;
+        }
+    });
+    
+    timer = setInterval(function(){
+        $("#btn_next").click();
+    }, 5000);
+    
+    $(".main_visual").hover(function(){
+        clearInterval(timer);
+    },function(){
+        timer = setInterval(function(){
+            $("#btn_next").click();
+        },5000);
+    });
+    
+    $(".main_image").bind("touchstart",function(){
+        clearInterval(timer);
+    }).bind("touchend", function(){
+        timer = setInterval(function(){
+            $("#btn_next").click();
+        }, 5000);
+    });
+    
+});
+</script>
+</head>
+<body>
+<div class="header">
+    <div class="header_l" style="width: 15%;">
+      <!-- <a href="personal.html"><img src="images/lpg.png" alt=""></a> -->
+   
+    </div>
+    <div class="header_c" style="width: 65%;"> <h1><i class="iconfont sosobb">&#xe641;</i><input type="text" class="textsoso"></h1></div>
+    <div class="header_r" style="width: 15%;"><a href="{:U('Public/news')}"><em class="xxd"></em><i class="iconfont"></i><p>消息</p></a></div>
+    <!-- <span><a href=""><img src="" alt=""></a></span> -->
+</div>
+
+<!-- banner  s-->
+<div class="main_visual">
+    <div class="flicking_con">
+        <foreach name="bannerList" item="banner" key="k">
+            <a>{$k+1}</a>
+        </foreach>
+    </div>
+    <div class="main_image">
+        <ul>
+            <foreach name="bannerList" item="banner">
+                <li><span class="img_3"><img src="{$banner['pic']}" onclick="window.location.href='{$banner['url']}'" alt=""></span></li>
+            </foreach>
+        </ul>
+    </div>
+</div>
+<!-- banner  e-->
+
+<div class="clear"></div>
+<div class="mian">
+    <div class="mian_mul">
+        <ul>
+            <foreach name="cateList" item="cate">
+                <li id="linnon">
+                    <a href="{:U('Home/cation',array('id'=>$cate['id']))}">
+                        <img src="{$cate['pic']}" alt="">
+                        <p>{$cate['name']}</p>
+                    </a>
+                </li>
+            </foreach>
+        </ul>
+    </div>
+</div>
+<div style="background: #fff;height: 3vmin;clear: both;"></div>
+<div class="mainnr_bsd">
+    <div class="mainnr_bsd_l">
+        <div class="bsd_l_top">
+            <em>{$ailife['tag']}</em>
+            <a href="{:U('Home/alife')}"><img src="{$ailife['pic']}" alt=""></a>
+            <p>{$ailife['name']}</p>
+        </div>
+        <div class="bsd_l_bott">
+            <em>{$miaosha['tag']}</em>
+            <a href="{:U('Home/tjms')}"><img src="{$miaosha['pic']}" alt=""></a>
+            <p style="top: 84%;">{$miaosha['name']}</p>
+            <!-- <div id="divdown1"></div> -->
+        </div>
+    </div>
+    <div class="mainnr_bsd_r">
+        <div class="bsd_r_top">
+            <div class="bsd_r_topl">
+                <em>{$youxuan['tag']}</em>
+                <a href="{:U('Home/ferred')}"><img src="{$youxuan['pic']}" alt=""></a>
+                <p>{$youxuan['name']}</p>
+            </div>
+            <div class="bsd_r_topr">
+                <em>{$xia['tag']}</em>
+                <img src="{$xia['pic']}" alt="">
+                <p>{$xia['name']}</p>
+            </div>
+        </div>
+        <div class="bsd_r_bott">
+            <em>{$meiji['tag']}</em>
+            <img src="{$meiji['pic']}" alt="">
+            <p>{$meiji['name']}</p>
+        </div>
+        <div class="bsd_r_bott" style="border:none;">
+            <div class="bottl">
+                <em>{$duoshou['tag']}</em>
+                <img src="{$duoshou['pic']}" alt="">
+                <p>{$duoshou['name']}</p>
+            </div>
+            <div class="bottr">
+                <em>{$xiaowo['tag']}</em>
+                <img src="{$xiaowo['pic']}" alt="">
+                <p>{$xiaowo['name']}</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div style="height: 17vmin;clear: both;"></div>
+
+<footer>
+   <a href="{:U('Home/index')}" class="active">
+        <i class="iconfont iconfoot2" style="color:#000000;">&#xe63a;</i>
+        <p>首页</p>
+    </a>
+    <a href="{:U('Dynamic/dynamic')}">
+        <i class="iconfont iconfoot2" style="color:#fff;">&#xe60d;</i>
+        <p>动态</p>
+    </a>
+    <a href="{:U('Car/shopping')}">
+        <i class="iconfont iconfoot2" style="color:#fff;font-size: 6vmin;line-height: 8.2vmin;">&#xf0178;</i>
+        <p>购物车</p>
+    </a>
+    <a href="{:U('Member/mine')}" style="padding-top:0px;">
+        <i class="iconfont iconfoot2" style="color:#fff;font-size: 6vmin;margin-top:3px;">&#xe642;</i>
+        <p style="line-height: 7vmin;">我的</p>
+    </a>
+</footer>
+
+<script language="javascript" type="text/javascript"> 
+var interval = 1000; 
+function ShowCountDown(time,divname) 
+{ 
+var now = new Date(); 
+//var edate = new Date(Date.parse(time.replace(/-/g, "/")));
+//
+var two = parseInt(now.getTime()/1000);
+var leftsecond=parseInt(time-(two-3*60)+7); 
+//var one = edate.getTime();
+var day1=Math.floor(leftsecond/(60*60*24)); 
+var hour=Math.floor((leftsecond-day1*24*60*60)/3600); 
+var minute=Math.floor((leftsecond-day1*24*60*60-hour*3600)/60); 
+var second=Math.floor(leftsecond-day1*24*60*60-hour*3600-minute*60); 
+var cc = document.getElementById(divname); 
+cc.innerHTML = hour+"  : "+minute+"  : "+second;  
+
+// if( hour==0 && minute==0 && second==0){
+//   window.location.href='/Index/index';
+//倒计时结束之后的逻辑
+// } 
+} 
+
+
+   // alert(sttime);
+   //time---这个是结束时间的时间戳
+     window.setInterval(function(){ShowCountDown('1502484613','divdown1');}, interval);
+     //2017/8/12 4:50:13
+
+
+
+</script> 
+</body>
+</html>

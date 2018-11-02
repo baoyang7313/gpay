@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>{$Think.lang.turncords2}</title>
+    <link rel="stylesheet" href="__WCSS__/style.css">
+    <link rel="stylesheet" href="__WCSS__/meCen.css">
+</head>
+<body>
+<div class="header">
+    <div class="header_l">
+        <a href="{:U('Index/Turncords')}"><img src="__WIMG__/jiant.png" alt=""></a>
+</div>
+    <div class="header_c"><h2>{$Think.lang.zcxq}</h2></div>
+    <!--{$Think.lang.turncords}-->
+</div>
+<div class="big_width100">
+
+    <!--<foreach name="Chan_info" item="v">-->
+        <!--<div class="annal_ul">-->
+            <!--<div class="annal_ul_l">-->
+                <!--<img src="__IMGHEAD__/{$v['imghead']}" alt="">-->
+                <!--<div class="annal_p">-->
+                    <!--<p>{$v['guname']}</p>-->
+                    <!--<p>UID:{$v['get_id']}</p>-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--<div class="annal_ul_r">-->
+                <!--<div class="annal_p">-->
+                    <!--<p class="zhuanrua">-{$v['get_nums']}</p>-->
+                    <!--<p>{$v['get_time']|date="Y-m-d H:i:s",###}</p>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</foreach>-->
+
+
+</div>
+
+<div class="zhuanchupingzheg">
+    <h1><img src="__WIMG__/logo.png" style="width: 50px; height: 50px;"/>{$Think.lang.zcpz}</h1>
+</div>
+
+<div class="content-1">
+    <div class="xiangqing1">
+        <div class="xiangqing1-content">
+            <h2>{$Think.lang.fkr}</h2>
+            <p>{$Think.lang.nc}:<span>{$getPerson.username}</span></p>
+            <p>UID:<span>{$uid}</span></p>
+            <p>{$Think.lang.tel}:<span>{$getPerson.mobile}</span></p>
+        </div>
+    </div>
+    <div class="xiangqing1 er">
+        <div class="xiangqing1-content  xiangqing1-content2">
+            <h2>{$Think.lang.shr}</h2>
+            <p>{$Think.lang.nc}:<span>{$getPay.username}</span></p>
+            <p>UID:<span>{$getPay.userid}</span></p>
+            <p>{$Think.lang.tel}:<span>{$getPay.mobile}</span></p>
+        </div>
+    </div>
+    <div class="xiangqing1 san">
+        <div class="xiangqing1-content">
+            <p>{$Think.lang.fkje}:<span>{$Chan_info.get_nums}</span></p>
+            <p>{$Think.lang.time}:<span>{$Chan_info.get_time|date="Y-m-d H:i:s",###}</span></p>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!---->
+<style>
+    .ftr{
+        width: 100%;
+        height: auto;
+        margin: auto;
+        z-index: 99;
+        background: #191B1F;
+        position: fixed;
+        bottom: 0;
+    }
+    .ftr>ul{
+        display: block;
+        width: 100%;
+        height: auto;
+        float: left;
+        font-size: 0;
+    }
+    .ftr>ul>li {
+        display: inline-block;
+        vert-align: top;
+        width: 25%;
+        height: auto;
+    }
+    .ftr>ul>li>a{
+        display: block;
+        width: 100%;
+        height: auto;
+        float: left;
+        padding: 9px 0;
+        box-sizing: border-box;
+    }
+    .ftr>ul>li>a>div{
+        width: 100%;
+        height: auto;
+        float: left;
+    }
+    .ftrname{
+        text-align: center;
+        font-size: 15px;
+        color: #fff;
+        margin-top: 9px;
+    }
+    .ftrimg{
+        display: table;
+        height: 29px;
+        margin: auto;
+        color: #fff;
+    }
+    .houimg{
+        margin: auto;
+        display: none;
+        width: auto;
+        height: 25px;
+    }
+    .qianimg{
+        display: table;
+        width: auto;
+        height: 25px;
+        margin: auto;
+    }
+    .xian{
+        display: block;
+    }
+    .yin{
+        display: none;
+    }
+    .clicss{
+        color: #0EA1EA;
+    }
+    .Navbgcolor{
+        background: blue;
+    }
+
+</style>
+<script>
+        $(function () {
+            hdr();
+        })
+    
+        function  hdr() {
+            hdrcli=function (e) {
+                var qianimg=$(".qianimg").eq(e);
+                var houimg=$(".houimg").eq(e);
+                var ftrli=$(".ftrli").eq(e);
+                var ftrname = $(".ftrname").eq(e);
+                houimg.addClass("xian");
+                qianimg.addClass("yin");
+                ftrname.addClass("clicss");
+                ftrli.siblings().children("a").children(".ftrimg").children(".qianimg").removeClass("xian");
+                ftrli.siblings().children("a").children(".ftrimg").children(".houimg").removeClass("yin");
+                ftrli.siblings().children("a").children(".ftrname").removeClass("clicss");
+            }
+        }
+    </script>

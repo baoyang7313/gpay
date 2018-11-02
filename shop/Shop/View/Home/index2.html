@@ -1,0 +1,304 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <title>聚点庄园</title>
+    <link rel="stylesheet" type="text/css" href="/Themes/Shop/Public/judian/iconfont/iconfont.css">
+    <link rel="stylesheet" type="text/css" href="/Themes/Shop/Public/judian/css/swiper-3.3.1.min.css">
+    <link rel="stylesheet" type="text/css" href="/Themes/Shop/Public/judian/css/foot.css">
+    <link rel="stylesheet" type="text/css" href="/Themes/Shop/Public/judian/css/index.css">
+    <link rel="stylesheet" href="/Themes/Shop/Public/judian/css/head.css">
+    <script type="text/javascript" src="/Themes/Shop/Public/judian/js/swiper-3.3.1.jquery.min.js"></script>
+    <script type="text/javascript" src="/Themes/Shop/Public/judian/js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="/Themes/Shop/Public/judian/js/swiper-3.3.1.jquery.min.js"></script>
+    <script type="text/javascript" src="/Themes/Shop/Public/judian/js/index.js"></script>
+    <script type="text/javascript" src="/Themes/Shop/Public/judian/js/fontSize.js"></script>
+    <script type="text/javascript" src="/Themes/Shop/Public/judian/js/fastclick.js"></script>
+
+    <script>
+
+    </script>
+</head>
+<body>
+<style>
+    html, body {
+        background-color: #fff;
+    }
+</style>
+<div class="header">
+    <div class="header_l">
+        <a href="javascript:window.history.go(-1);"><img src="__IMG__/lpg.png" alt=""></a>
+    </div>
+    <div class="header_c"><h1>农伯伯</h1></div>
+    <div class="header_r"><a href=""></a></div>
+
+</div>
+
+<div class="titlenav cblue">
+    <span style="color:transparent">.</span>
+    <div class="posleft"><img src="/Themes/Shop/Public/judian/images/29.png" alt=""></div>
+    <div class="posright"><a href="javascript:void(0)"><i class="iconfont">&#xe602;</i></a></div>
+    <div class="poscenter"><!-- <img src="/Themes/Shop/Public/judian/images/29.png" alt=""> --></div>
+</div>
+
+
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+        <foreach name="bannerList" item="banner">
+            <div class="swiper-slide blue-slide"><a href="{$banner['url']}"><img src="{$banner['pic']}">
+            </div>
+        </foreach>
+        <div class="swiper-pagination"></div>
+    </div>
+
+    <div class="zxtz">
+        <div class="zxtzcc">
+            <p style="float:left;"><span><img src="/Themes/Shop/Public/judian/images/gg.png" alt=""></span></p>
+            <marquee class="marq"><a href="">关于农伯伯系统升级的通知</a></marquee>
+        </div>
+    </div>
+
+
+    <div class="typelist">
+        <dl>
+            <foreach name="menuList" item="menu" key="key">
+                <if condition="$key lt 4">
+                    <dd>
+                        <a href="{:U('Home/cation',array('id'=>$menu['id']))}">
+                            <img src="{$menu['pic']}" alt="{$menu['name']}">
+                            <p>{$menu['name']}</p>
+                        </a>
+                    </dd>
+                </if>
+            </foreach>
+
+        </dl>
+    </div>
+    <div class="typelist">
+        <dl>
+            <foreach name="menuList" item="menu" key="key">
+                <if condition="$key gt 3">
+                    <dd>
+                        <a href="{:U('Home/cation',array('id'=>$menu['id']))}">
+                            <img src="{$menu['pic']}" alt="{$menu['name']}">
+                            <p>{$menu['name']}</p>
+                        </a>
+                    </dd>
+                </if>
+            </foreach>
+
+        </dl>
+    </div>
+
+    <div style="height: 3vmin;background: #eeeeee"></div>
+
+    <div class="menulist">
+        <div class="hall">
+            <p><img src="/Themes/Shop/Public/judian/images/ss01.png" alt="" style="width: 75%;margin:0 auto;"></p>
+            <div class="line"></div>
+        </div>
+        <div class="hallmain">
+            <div class="hallmain_l">
+                <img src="/Themes/Shop/Public/judian/images/1.jpg" alt="">
+                <h3>进口茄子</h3>
+                <p class="hallp">一口一个刚刚好</p>
+                <p class="hallpb">450-500g</p>
+                <p class="jiang">￥11.0 <s>市场价：20.5</s></p>
+            </div>
+            <div class="hallmain_r">
+                <a href=""><img src="/Themes/Shop/Public/judian/images/guc.png" alt=""></a>
+            </div>
+        </div>
+        <div style="height: 3vmin;clear: both;"></div>
+
+        <div class="hallmain">
+            <div class="hallmain_l">
+                <img src="/Themes/Shop/Public/judian/images/2.jpg" alt="">
+                <h3>南瓜花</h3>
+                <p class="hallp">新鲜出炉口味鲜美</p>
+                <p class="hallpb">450-500g</p>
+                <p class="jiang">￥11.0 <s>市场价：20.5</s></p>
+            </div>
+            <div class="hallmain_r">
+                <a href=""><img src="/Themes/Shop/Public/judian/images/guc.png" alt=""></a>
+            </div>
+        </div>
+        <div style="height: 3vmin;clear: both;"></div>
+
+        <div class="hallmain">
+            <div class="hallmain_l">
+                <img src="/Themes/Shop/Public/judian/images/3.jpg" alt="">
+                <h3>东北玉米</h3>
+                <p class="hallp">新鲜美味</p>
+                <p class="hallpb">450-500g</p>
+                <p class="jiang">￥11.0 <s>市场价：20.5</s></p>
+            </div>
+            <div class="hallmain_r">
+                <a href=""><img src="/Themes/Shop/Public/judian/images/guc.png" alt=""></a>
+            </div>
+        </div>
+        <div style="height: 3vmin;clear: both;"></div>
+
+        <div class="hallmain">
+            <div class="hallmain_l">
+                <img src="/Themes/Shop/Public/judian/images/04.jpg" alt="">
+                <h3>南方西红柿</h3>
+                <p class="hallp">新鲜出炉口味鲜美</p>
+                <p class="hallpb">450-500g</p>
+                <p class="jiang">￥11.0 <s>市场价：20.5</s></p>
+            </div>
+            <div class="hallmain_r">
+                <a href=""><img src="/Themes/Shop/Public/judian/images/guc.png" alt=""></a>
+            </div>
+        </div>
+        <div style="height: 3vmin;clear: both;"></div>
+    </div>
+    <style>
+        .mall-row {
+            background-color: #fff;
+            position: relative;
+        }
+
+        .row-remove-padding {
+            padding: 0 !important;
+        }
+
+        .mall-group {
+            width: 100%;
+            display: -webkit-box;
+            display: flexbox;
+            background-color: #fff;
+        }
+
+        .mall-group-line {
+            -webkit-box-flex: 1;
+            flex: 1;
+            background-color: #fff;
+        }
+
+        .mall-icon-btn {
+            background: #fff; /*padding: 0.6rem 0 0.6rem 0;*/
+        }
+
+        .mall-icon-btn > p {
+            max-width: 3rem;
+            max-height: 3rem;
+            margin: auto;
+        }
+
+        .mall-icon-btn > p > img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .mall-icon-btn > span {
+            text-align: center;
+            display: block;
+            margin-top: 0.2rem;
+            font-size: 12px;
+        }
+
+        .mall-good-one {
+            width: 100%;
+        }
+
+        .good-img {
+            height: 120px;
+        }
+
+        .mall-clearpadding {
+            display: none;
+        }
+
+    </style>
+
+    <div class="mall-row ui-sortable-handle" style="position: relative;">
+        <div class="mall-group" data-role="muchbordergood">
+            <div class=" mall-group-line" data-targeturl="/mall/shop/ProductInfo.aspx?custID=101522&amp;ID=1196991">
+                <div class="control-img"><img
+                        src="http://ng.szocc.com/Upload_S/U_IMG/img_101522/101522_20170731/zp20170731114230962098913.jpg">
+                </div>
+            </div>
+            <div class="mall-group-line" data-targeturl="/mall/shop/ProductInfo.aspx?custID=101522&amp;ID=1196992">
+                <div class="control-img"><img
+                        src="http://ng.szocc.com/Upload_S/U_IMG/img_101522/101522_20170731/zp20170731114303392114128.jpg">
+                </div>
+            </div>
+            <div class="mall-group-line" data-targeturl="/mall/shop/ProductInfo.aspx?custID=101522&amp;ID=1196990">
+                <div class="control-img"><img
+                        src="http://ng.szocc.com/Upload_S/U_IMG/img_101522/101522_20170731/zp20170731114449363889650.png">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="menulist" style="clear: both;margin-right:3%;margin-left: 3%;">
+        <dl>
+            <dd>
+                <div class="hallbb">
+                    <p>蔬菜市场 <span><a href="javascript:void(0)"><img src="/Themes/Shop/Public/judian/images/gd.png"
+                                                                    alt=""></a></span></p>
+                </div>
+                <img src="/Themes/Shop/Public/judian/images/13.jpg" alt="">
+            </dd>
+
+            <dd>
+                <div class="hallbb">
+                    <p>水果市场 <span><a href="javascript:void(0)"><img src="/Themes/Shop/Public/judian/images/gd.png"
+                                                                    alt=""></a></span></p>
+                </div>
+                <img src="/Themes/Shop/Public/judian/images/14.jpg" alt="">
+            </dd>
+        </dl>
+    </div>
+    <div style="height: 23vmin;clear: both;"></div>
+    <footer>
+        <dl>
+            <dd class="select">
+                <a href="{:U('Home/index')}">
+                    <i class="iconfont">&#xe601;</i>
+                    <p>首页</p>
+                </a>
+            </dd>
+            <dd>
+                <a href="{:U('Home/yuan')}">
+                    <i class="iconfont">&#xe618;</i>
+                    <p>一元夺宝</p>
+                </a>
+            </dd>
+            <dd>
+                <a href="{:U('Car/shopping')}">
+                    <i class="iconfont">&#xe611;</i>
+                    <p>购物车</p>
+                </a>
+            </dd>
+            <dd>
+                <a href="{:U('Home/User/member')}">
+                    <i class="iconfont">&#xe669;</i>
+                    <p>农场</p>
+                </a>
+            </dd>
+            <dd>
+                <a href="{:U('Member/mine')}">
+                    <i class="iconfont">&#xe9ad;</i>
+                    <p>我的</p>
+                </a>
+            </dd>
+        </dl>
+    </footer>
+</body>
+</html>
+
+
+
+
+
+
+

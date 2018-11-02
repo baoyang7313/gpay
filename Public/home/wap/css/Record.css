@@ -1,0 +1,33 @@
+html,body{
+    height:100%;
+    font-size: 62.5%;
+    background: rgb(243,243,243);
+}
+.tabRecord {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+}
+.container{
+    background: #fff;
+}
+a {
+    display: block;
+    flex:1;
+    line-height: 4.5rem;
+    color: rgb(106,106,106);
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+.tabRecord-bg{
+    background: rgb(77,105,205);
+    color:#fff;
+}
+.content{
+    min-height:20rem;
+    line-height: 20rem;
+    color:#000;
+    background: rgb(243,243,243);
+    font-size:1.8rem;
+}
